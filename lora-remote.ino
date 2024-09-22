@@ -73,10 +73,10 @@ void goToSleep() {
     // Add delay to let the OLED show the final message before going to sleep
     delay(1000);
 
-    VextOFF();  // Optionally turn off external power if needed
+    VextOFF();  
 
     Serial.println("Entering deep sleep... Press reset to wake.");
-    esp_deep_sleep_start();  // Enter deep sleep, wait for reset button to wake
+    esp_deep_sleep_start();  
 }
 
 
